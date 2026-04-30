@@ -1,0 +1,55 @@
+/*Reset basico: remove os espaços padrão do navegador*/
+*{
+    margin: 0; /*Remove margens padrao*/
+    padding: 0; /*Remove espaçamentos internos*/
+
+}
+
+/*corpo da pagina*/
+body{
+    background-color: #5fd7f5;/*Cor de fundo(azul claro)*/
+    font-family: "Dancing Script", cursive;
+    color: #fafafa; /*Cor padrao do texto*/
+    font-size: 16px;/*Tamanho padrao da fonte*/
+    line-height: 1,7; /*Espaçamento entre linhas*/
+
+}
+
+/*conatuner principal*/
+.container{
+    max-width: 1000px; /*Define a largura maxima da pagina*/
+    margin: 40px auto; /*centralizar horizontalmente e da espaço acima/baixoi */
+    padding: 40px; /*Espaçamento interno */
+    background-color: #00c9fc; /* fundo azul*/
+    border-radius: 10px; /*Cantos arrendondados*/
+    box-shadow: 0 4px 16px rgb(0, 0, 0, 1); /*Sombra*/
+}
+
+/*Menu de navegação*/
+nav{
+    background-color: #0097fc; /*Cor de fundo azul*/
+    padding: 14px; /*Espaçamento intermo*/
+    border-radius: 10px; /*cantos arrendondados*/
+    margin-bottom:  30px; /*Espaço abaixo do menu*/
+    text-align: center; /*centralizar os links*/
+}
+
+/*Links do menu */
+nav a{
+    color: #ffffff; /*Cor do texto azul escuro*/
+    text-decoration: none; /*remove sublinhado*/
+    margin: 0 10px; /*espaço entre os links*/
+    font-weight: bold; /*texto em negrito*/
+}
+
+nav a:hover{
+    text-decoration: underline; /*Adiciona o sublinhado ao passar o mouse*/
+}
+
+H1{
+    font-size: 40px; /*Tamanho grande*/
+    color: #0097fc; /*Azul escuro*/
+    border-left: 5px solid #fafafa; /*Barra decorativa lateral*/
+    padding-left: 10px; /*Espaço entre a barra e o texto*/
+    margin-bottom: 10px; /*Espaço abaixo*/
+}
