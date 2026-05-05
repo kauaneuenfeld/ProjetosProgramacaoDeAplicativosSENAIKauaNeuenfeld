@@ -4,9 +4,40 @@
 }
 
 body{
-    background-color: #BDC3C7;
-    font-family: "Montserrat", sans-serif;
+    background-color: #9fa3a6;
+    font-family: "Supermercado One", sans-serif;
     color: #000000;
     font-size: 14px;
     line-height: 1,7;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #BDC3C7;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgb(0, 0, 0, 1);
+}
+
+h1{
+    font-size: 40px;
+    color: #c6985f;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+img{
+    max-width: 120%;
+    border-radius: 10%;
+    border: solid #c6985f;
+    margin: 5px 0;
+    display: block;     
+    margin-left: auto;   
+    margin-right: auto; 
+}
+
+p{
+    margin-bottom: 12px;
 }
