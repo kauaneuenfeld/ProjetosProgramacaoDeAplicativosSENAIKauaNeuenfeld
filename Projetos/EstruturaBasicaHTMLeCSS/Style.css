@@ -53,3 +53,136 @@ H1{
     padding-left: 10px; /*Espaço entre a barra e o texto*/
     margin-bottom: 10px; /*Espaço abaixo*/
 }
+
+/*Subtitulo*/
+h2{
+    color: #00fff0;
+    margin-top: 20px; /*Espaço acima*/
+}
+
+/*Subtitulo menor*/
+h3{
+    color: #0058fc;
+    margin-top: 15px; /*Espaço acima*/
+}
+
+/*Paragrafos*/
+p{
+    margin-bottom: 12px; /*Espaço do paragrafo*/
+}
+
+/*Texto em negrito*/
+strong{
+    color: #7fffd4;
+}
+
+/*texto em enfase*/
+em{
+    color: #f07fd7;
+}
+
+/*Texto marcado*/
+mark{
+    background-color: #f55bd4;
+}
+
+/*Linha horizontal*/
+hr{
+    margin: 20px 0;
+}
+
+/*Links gerais*/
+a{
+    color: #fc0015;
+}
+
+/*Link ao passar o mouse*/
+a:hover{
+    color: #fc8600;
+}
+
+/*imagen*/
+img{
+    max-width: 120px; /*Linha do tamanho*/
+    border-radius: 50%; /*Deixa a imagem redonda*/
+    border: 3px solid #fabc75; 
+    margin: 15px 0; /*Espaço acima e abaixo*/
+}
+
+/*Listas*/
+ul, ol{
+    margin-left: 20px;
+}
+
+/*Formulario*/
+form{
+    background-color: #08fc00;
+    border: 5px solid rgb(94, 94, 94);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+label{
+    font-weight: bold; /*texto em negrito*/
+}
+
+ input, textarea, select{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 3px solid #0058fc;
+    border-radius: 5px;
+ }
+
+ button{
+    background-color: #7fffd4;
+    color: #fc0015;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+ }
+
+ button:hover{
+    background-color: #0004fc;
+ }
+
+ table{
+    width: 100%;
+    border-collapse: collapse; /*Junta as bordas*/
+    margin-top: 10px;
+ }
+
+ /*cabecalho*/
+ th{
+    background-color: #f55bd4;
+    color: #08fc00;
+    padding: 10px;
+    border: 2px solid #000000;
+ }
+
+ td{
+    padding: 10px;
+    border: 2px solid #000000;
+ }
+
+ video, audio, iframe{
+    margin: 15px 0;
+ }
+
+ pre{
+    background-color: #000000;
+    padding: 15px;
+    border-radius: 5px;
+ }
+
+ code{
+    color: #f55bd4;
+ }
+
+ footer{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 14px;
+ }
+ 
