@@ -4,10 +4,88 @@
 }
 
 body{
-    background-color: #ced1d2;
-    font-family: "Cossette Texte", sans-serif;
-    font-weight: 700;
+    background-color: #484a4b;
+    font-family: "Open Sans", sans-serif;
     font-size: 16px;
-    line-height: 1,7px;
+    line-height: 1.7;
 }
 
+.container{
+    max-width: 700px;
+    margin: 90px auto;
+    padding: 100px;
+    background-color: #484a4b;
+}
+
+.containerAmarelo{
+    max-width: 1000px;
+    background-color: #f3c42b;
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+    font-weight: 400;
+
+}
+
+.containerLogin{
+    max-width: 900px;
+    background-color: #151f24;
+    padding: 80px;
+}
+
+.inputBox{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.inputBox i{
+    color: #88898a;
+    font-size: 28px;
+}
+
+input[type = "text"],
+input[type = "password"]{
+    width: 94%;
+    padding: 20px;
+    border: none;
+    background-color: #88898a;
+}
+
+input::placeholder{
+    color: #151f24;
+}
+
+input[type="checkbox"]{
+    vertical-align: middle;
+    margin-right: 20px;
+    accent-color: #6d6a6a;
+    transform: scale(1.4);
+}
+
+button{
+    background-color: #d4d7da;
+    padding: 15px;
+    width: 40%;
+    border: none;
+    margin-left: auto;
+    display: block;
+    cursor: pointer;
+}
+
+footer{
+    margin-top: 20px;
+    text-align: center;
+    color: #969797;
+    font-size: 18px;
+}
+
+label{
+    color: #969797;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 20px;
+}
