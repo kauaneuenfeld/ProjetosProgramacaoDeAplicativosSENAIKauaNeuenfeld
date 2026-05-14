@@ -1,188 +1,190 @@
 /*Reset basico: remove os espaços padrão do navegador*/
-*{
-    margin: 0; /*Remove margens padrao*/
-    padding: 0; /*Remove espaçamentos internos*/
-
+* {
+  margin: 0; /*Remove margens padrao*/
+  padding: 0; /*Remove espaçamentos internos*/
 }
 
 /*corpo da pagina*/
-body{
-    background-color: #5fd7f5;/*Cor de fundo(azul claro)*/
-    font-family: "Dancing Script", cursive;
-    color: #fafafa; /*Cor padrao do texto*/
-    font-size: 16px;/*Tamanho padrao da fonte*/
-    line-height: 1,7; /*Espaçamento entre linhas*/
-
+body {
+  background-color: #5fd7f5; /*Cor de fundo(azul claro)*/
+  font-family: "Dancing Script", cursive;
+  color: #fafafa; /*Cor padrao do texto*/
+  font-size: 16px; /*Tamanho padrao da fonte*/
+  line-height: 1, 7; /*Espaçamento entre linhas*/
 }
 
 /*conatuner principal*/
-.container{
-    max-width: 1000px; /*Define a largura maxima da pagina*/
-    margin: 40px auto; /*centralizar horizontalmente e da espaço acima/baixoi */
-    padding: 40px; /*Espaçamento interno */
-    background-color: #00c9fc; /* fundo azul*/
-    border-radius: 10px; /*Cantos arrendondados*/
-    box-shadow: 0 4px 16px rgb(0, 0, 0, 1); /*Sombra*/
+.container {
+  max-width: 1000px; /*Define a largura maxima da pagina*/
+  margin: 40px auto; /*centralizar horizontalmente e da espaço acima/baixoi */
+  padding: 40px; /*Espaçamento interno */
+  background-color: #00c9fc; /* fundo azul*/
+  border-radius: 10px; /*Cantos arrendondados*/
+  box-shadow: 0 4px 16px rgb(0, 0, 0, 1); /*Sombra*/
 }
 
 /*Menu de navegação*/
-nav{
-    background-color: #0097fc; /*Cor de fundo azul*/
-    padding: 14px; /*Espaçamento intermo*/
-    border-radius: 10px; /*cantos arrendondados*/
-    margin-bottom:  30px; /*Espaço abaixo do menu*/
-    text-align: center; /*centralizar os links*/
+nav {
+  background-color: #0097fc; /*Cor de fundo azul*/
+  padding: 14px; /*Espaçamento intermo*/
+  border-radius: 10px; /*cantos arrendondados*/
+  margin-bottom: 30px; /*Espaço abaixo do menu*/
+  text-align: center; /*centralizar os links*/
 }
 
 /*Links do menu */
-nav a{
-    color: #ffffff; /*Cor do texto azul escuro*/
-    text-decoration: none; /*remove sublinhado*/
-    margin: 0 10px; /*espaço entre os links*/
-    font-weight: bold; /*texto em negrito*/
+nav a {
+  color: #ffffff; /*Cor do texto azul escuro*/
+  text-decoration: none; /*remove sublinhado*/
+  margin: 0 10px; /*espaço entre os links*/
+  font-weight: bold; /*texto em negrito*/
 }
 
-nav a:hover{
-    text-decoration: underline; /*Adiciona o sublinhado ao passar o mouse*/
+nav a:hover {
+  text-decoration: underline; /*Adiciona o sublinhado ao passar o mouse*/
 }
 
-H1{
-    font-size: 40px; /*Tamanho grande*/
-    color: #0097fc; /*Azul escuro*/
-    border-left: 5px solid #fafafa; /*Barra decorativa lateral*/
-    padding-left: 10px; /*Espaço entre a barra e o texto*/
-    margin-bottom: 10px; /*Espaço abaixo*/
+H1 {
+  font-size: 40px; /*Tamanho grande*/
+  color: #0097fc; /*Azul escuro*/
+  border-left: 5px solid #fafafa; /*Barra decorativa lateral*/
+  padding-left: 10px; /*Espaço entre a barra e o texto*/
+  margin-bottom: 10px; /*Espaço abaixo*/
 }
 
 /*Subtitulo*/
-h2{
-    color: #00fff0;
-    margin-top: 20px; /*Espaço acima*/
+h2 {
+  color: #00fff0;
+  margin-top: 20px; /*Espaço acima*/
 }
 
 /*Subtitulo menor*/
-h3{
-    color: #0058fc;
-    margin-top: 15px; /*Espaço acima*/
+h3 {
+  color: #0058fc;
+  margin-top: 15px; /*Espaço acima*/
 }
 
 /*Paragrafos*/
-p{
-    margin-bottom: 12px; /*Espaço do paragrafo*/
+p {
+  margin-bottom: 12px; /*Espaço do paragrafo*/
 }
 
 /*Texto em negrito*/
-strong{
-    color: #7fffd4;
+strong {
+  color: #7fffd4;
 }
 
 /*texto em enfase*/
-em{
-    color: #f07fd7;
+em {
+  color: #f07fd7;
 }
 
 /*Texto marcado*/
-mark{
-    background-color: #f55bd4;
+mark {
+  background-color: #f55bd4;
 }
 
 /*Linha horizontal*/
-hr{
-    margin: 20px 0;
+hr {
+  margin: 20px 0;
 }
 
 /*Links gerais*/
-a{
-    color: #fc0015;
+a {
+  color: #fc0015;
 }
 
 /*Link ao passar o mouse*/
-a:hover{
-    color: #fc8600;
+a:hover {
+  color: #fc8600;
 }
 
 /*imagen*/
-img{
-    max-width: 120px; /*Linha do tamanho*/
-    border-radius: 50%; /*Deixa a imagem redonda*/
-    border: 3px solid #fabc75; 
-    margin: 15px 0; /*Espaço acima e abaixo*/
+img {
+  max-width: 120px; /*Linha do tamanho*/
+  border-radius: 50%; /*Deixa a imagem redonda*/
+  border: 3px solid #fabc75;
+  margin: 15px 0; /*Espaço acima e abaixo*/
 }
 
 /*Listas*/
-ul, ol{
-    margin-left: 20px;
+ul,
+ol {
+  margin-left: 20px;
 }
 
 /*Formulario*/
-form{
-    background-color: #08fc00;
-    border: 5px solid rgb(94, 94, 94);
-    border-radius: 5px;
-    padding: 20px;
-    margin-top: 20px;
+form {
+  background-color: #08fc00;
+  border: 5px solid rgb(94, 94, 94);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
 }
 
-label{
-    font-weight: bold; /*texto em negrito*/
+label {
+  font-weight: bold; /*texto em negrito*/
 }
 
- input, textarea, select{
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 3px solid #0058fc;
-    border-radius: 5px;
- }
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 3px solid #0058fc;
+  border-radius: 5px;
+}
 
- button{
-    background-color: #7fffd4;
-    color: #fc0015;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
- }
+button {
+  background-color: #7fffd4;
+  color: #fc0015;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
 
- button:hover{
-    background-color: #0004fc;
- }
+button:hover {
+  background-color: #0004fc;
+}
 
- table{
-    width: 100%;
-    border-collapse: collapse; /*Junta as bordas*/
-    margin-top: 10px;
- }
+table {
+  width: 100%;
+  border-collapse: collapse; /*Junta as bordas*/
+  margin-top: 10px;
+}
 
- /*cabecalho*/
- th{
-    background-color: #f55bd4;
-    color: #08fc00;
-    padding: 10px;
-    border: 2px solid #000000;
- }
+/*cabecalho*/
+th {
+  background-color: #f55bd4;
+  color: #08fc00;
+  padding: 10px;
+  border: 2px solid #000000;
+}
 
- td{
-    padding: 10px;
-    border: 2px solid #000000;
- }
+td {
+  padding: 10px;
+  border: 2px solid #000000;
+}
 
- video, audio, iframe{
-    margin: 15px 0;
- }
+video,
+audio,
+iframe {
+  margin: 15px 0;
+}
 
- pre{
-    background-color: #000000;
-    padding: 15px;
-    border-radius: 5px;
- }
+pre {
+  background-color: #000000;
+  padding: 15px;
+  border-radius: 5px;
+}
 
- code{
-    color: #f55bd4;
- }
+code {
+  color: #f55bd4;
+}
 
- footer{
-    margin-top: 30px;
-    text-align: center;
-    font-size: 14px;
- }
- 
+footer {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 14px;
+}

@@ -1,48 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TelaDeLogin</title>
-    <link rel="stylesheet" href="StyleTelaDeLogin.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="StyleTelaDeLogin.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
     <div class="container">
+      <div class="containerAmarelo">
+        <h1>CLIENT LOGIN</h1>
+      </div>
 
-        <div class="containerAmarelo">
-            <h1>CLIENT LOGIN</h1>
-        </div>
+      <div class="containerLogin">
+        <form>
+          <div class="inputBox">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" placeholder="Username" />
+          </div>
+          <br /><br />
+          <div class="inputBox">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" placeholder="Password" />
+          </div>
+          <br />
+        </form>
 
-        <div class="containerLogin">
-            <form>
-                <div class="inputBox">
-                    <i class="fa-solid fa-user"></i>
-                    <input type="text" placeholder="Username">
-                </div>
-                <br><br>
-                <div class="inputBox">
-                    <i class="fa-solid fa-lock"></i>
-                    <input type="password" placeholder="Password">
-                </div>
-                <br>
-            </form>
+        <label>
+          <input type="checkbox" checked /> Remember me
+          <button type="submit">LOGIN</button>
+        </label>
+      </div>
 
-            <label>
-                <input type="checkbox" checked> Remember me
-                <button type="submit">LOGIN</button>
-            </label>
-
-        </div>
-
-        <footer>
-            <p> Copyright &copy; 2018 Your Brand Name, Inc </p>
-        </footer>
-
+      <footer>
+        <p>Copyright &copy; 2018 Your Brand Name, Inc</p>
+      </footer>
     </div>
-</body>
+  </body>
 </html>
