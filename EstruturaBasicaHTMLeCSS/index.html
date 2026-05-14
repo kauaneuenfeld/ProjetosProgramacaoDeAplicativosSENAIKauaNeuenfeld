@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minha primeira página</title>
+    <link rel="stylesheet" href="Style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!--=========== Menu de navegação ===========-->
+      <nav>
+        <a href="#">Início</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contato</a>
+      </nav>
+
+      <!--=========== Títulos ===========-->
+      <h1>Titulo Principal</h1>
+      <h2>Subtítulo</h2>
+      <h3>Subtítulo menor</h3>
+
+      <!--=========== Parágrafos ===========-->
+      <p>
+        Esse texto possui
+        <strong>uma parte muito importante</strong>
+        <em>uma parte com ênfase</em>
+        <mark>um trecho destacado</mark>
+        <small>uma observação menor</small>
+      </p>
+
+      <!--=========== Quebra de linha ===========-->
+      <p>Linha 1 <br />linha 2</p>
+
+      <!--=========== Linha horizontal ===========-->
+      <hr />
+
+      <!--=========== Link ===========-->
+      <a href="https://www.google.com">Ir para o google</a>
+
+      <br />
+      <br />
+
+      <!--=========== Imagem ===========-->
+      <img
+        src="https://chat.google.com/u/0/api/get_attachment_url?url_type=FIFE_URL&content_type=image%2Fpng&attachment_token=AOo0EEVfg7DOxfsqcIr%2BKL%2BJRFbXjJhpl3EyKrS7bLyq9jBkyiAt9vIQNdmV18FauAtlmXac6YUPsBXDguRs53BI7zcXAxQlkOoc2KtytRbTWSAySJPboNYqJn6CBxaYUeGSptl17ZrWbY2t2hOwSjBB1Vz6U%2FsL5tQqwqwNgTPuSv5vDu5bGuXgCExreOHvQeaU%2B6%2FO9%2BQOrEH3L9jWqnbO1VS5jkqsAYaE8ldo462wgusnYl3G78b9%2BLxG96m1DrJh%2Fg0CECasOq5QQiDLeIUJZiwBY2LDBfulqBWgACMk44565SxBbPaLEydNcH9lLX1PXyNhZc%2F5%2FKDJfepyIgyNreuKwEZNnVbtydI1qYv2cdk7%2FmhdOCobGVlExmztklMZTZ16rrGlgi7dh87QCyi9uw2vSMEa8nVjkCePyEQwUxUGw2J2e5d1nhMs3ORsL9evEca7cmHCXWQtoMYfK3KXK6pD3fdN0wZ6%2FIUE9qCVjzjbNrl%2FVnHfy2%2BSv76gBufNbOHSwr8%2Fx97pk6da86leYKyerU9maP0eHUqPAjw7UctV6sWuvHeZDI43nUSV6Anx&allow_caching=true&sz=w1920-h945-rw&auditContext=forDisplay"
+        alt="Imagem de exemplo"
+      />
+      <img src="unnamed.webp" />
+
+      <!--=========== lista não ordenada ===========-->
+      <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+      </ul>
+
+      <!--=========== Lista ordenada ===========-->
+      <ol>
+        <li>Primeiro</li>
+        <li>Segundo</li>
+        <li>Terceiro</li>
+      </ol>
+
+      <!--=========== Div ===========-->
+
+      <div>
+        <p>Conteúdo dentro de uma div</p>
+      </div>
+
+      <!--=========== Fomulário ===========-->
+      <form>
+        <label>Nome</label>
+        <input type="text" placeholder="Digite o seu nome" />
+        <br />
+        <br />
+        <label>Email</label>
+        <input type="email" placeholder="Digite o seu email" />
+        <br />
+        <br />
+        <label>Idade</label>
+        <input type="number" placeholder="Digite sua idade" />
+        <br />
+        <br />
+        <label>Mensagem</label>
+        <textarea placeholder="Digite sua Mensagem"></textarea>
+
+        <!--=========== Campo select ===========-->
+        <br /><br />
+        <label>Escolha uma opção</label>
+        <select>
+          <option>Opção 1:</option>
+          <option>Opção 2:</option>
+        </select>
+
+        <br /><br />
+
+        <!--=========== Botão ===========-->
+        <button type="submit">Enviar</button>
+      </form>
+
+      <!--=========== Tabela ===========-->
+      <br /><br />
+
+      <table border="3">
+        <tr>
+          <th>Nome</th>
+          <th>idade</th>
+        </tr>
+        <tr>
+          <td>Natalino</td>
+          <td>25</td>
+        </tr>
+        <tr>
+          <td>dede</td>
+          <td>35</td>
+        </tr>
+      </table>
+
+      <!--=========== Tags de midia ===========-->
+
+      <h3>Exemplos de vídeo</h3>
+      <video controls width="300">
+        <source
+          src="ssstik.io_@tacifenilli5_1744641668994.mp4"
+          type="Video/Mp4"
+        />
+      </video>
+
+      <br />
+
+      <!--=========== Tags de audio ===========-->
+      <audio controls>
+        <source
+          src="MC Kevin - Cavalo de Troia (GR6 Filmes) Djay W - GR6 EXPLODE (128k).mp3"
+          type="audio/mp3"
+        />
+      </audio>
+
+      <!--=========== Iframe ===========-->
+      <h3>Exemplo de iframe</h3>
+
+      <iframe
+        src="https://ava.sesisenai.org.br/my/"
+        width="800"
+        height="800"
+      ></iframe>
+
+      <!--=========== Exibição de codigo ===========-->
+      <pre>
+        <code>
+            package Aula01;
+
+            public class Teste {
+
+	            public static void main(String[] args) {
+		
+		                System.out.println("Ola git");
+		
+	            }
+
+            }
+        </code>
+    </pre>
+
+      <!--=========== Rodape ===========-->
+      <footer>
+        <p>&copy;2026-Minha primeira pagina</p>
+      </footer>
+    </div>
+  </body>
+</html>
