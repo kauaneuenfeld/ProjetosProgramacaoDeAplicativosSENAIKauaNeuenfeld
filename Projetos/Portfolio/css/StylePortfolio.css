@@ -148,4 +148,38 @@ nav ul li a:hover {
   height: 100%;
   object-fit: cover;
 }
-/*alt + shift + f*/
+
+footer {
+  background-color: #006494;
+  padding: 40px 8%;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.conteudo-rodape {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.navegação-rodape {
+  margin: 15px 0;
+}
+
+.navegação-rodape a {
+  color: #e8f1f2;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 17px;
+  transition: 0.5s;
+}
+
+.navegação-rodape a:hover {
+  color: #1b98e0;
+}
+
+.direitos-autorais {
+  color: #e8f1f2a1;
+  font-size: 12px;
+}
