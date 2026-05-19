@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kauã | Portfólio</title>
-    <link rel="stylesheet" href="css/StylePortfolio.css" />
-    <link rel="stylesheet" href="css/responsivo.css">
+    <link rel="stylesheet" href="css/StyleServico.css" />
+    <link rel="stylesheet" href="css/responsivo.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,56 +14,95 @@
     />
   </head>
   <body>
-    <!--Cabeçalho com logotipo e navegação-->
     <header>
       <div class="logotipo">Port<span>fólio</span></div>
-      <!--Logotipo do site-->
       <nav>
         <ul>
           <li><a href="PortfolioIndex.html">Inicio</a></li>
-          <!--Link para o topo da pagina-->
           <li><a href="SobreIndex.html">Sobre</a></li>
-          <!--Link para seção sobre-->
           <li><a href="ServicoIndex.html">Serviços</a></li>
-          <!--Link para a seção serviço-->
-          <li><a href="#">Habilidades</a></li>
-          <!--Link para a seção skills-->
-          <li><a href="#">Contato</a></li>
-          <!--Link para o formulario de contato-->
+          <li><a href="HabilidadesIndex.html">Habilidades</a></li>
+          <li><a href="ContatoIndex.html">Contato</a></li>
         </ul>
       </nav>
     </header>
 
-    <!--Secao principal de apresentação-->
     <main class="secao-principal">
-      <div class="texto-apresentação">
-        <h1>Meus<span> Serviços</span></h1>
-        <!--Nome em destaque-->
-        <p>
-          Sou freelancer e web developer com 2 anos de experiencia transformando
-          ideias em realidade
-        </p>
+      <h1 class="titulo-servicos">Meus <span>Serviços</span></h1>
+      <p class="subtitulo-servicos">Fictícios</p>
+
+      <div class="grade-servicos">
+        <div class="card-servico">
+          <div class="card-imagem">
+            <img src="img/SiteJava.jpg" />
+          </div>
+          <p class="card-descricao">
+            Este é um sistema web responsivo voltado para o gerenciamento de
+            perfis gamers. Desenvolvido com uma interface moderna e intuitiva, o
+            projeto foi construído utilizando HTML5 e CSS3 para o design visual,
+            e Java no back-end para o processamento lógico dos dados.
+          </p>
+          <span class="card-local">Feito na IDE IntelliJ</span>
+          <span class="card-preco">R$ 2.000,00</span>
         </div>
 
-      <!--Area imagem de perfil-->
-      <div class="area-imagem">
-        <div class="moldura-circular">
-          <!--Imagem de exemplo - Substitua pelo link da sua foto real-->
-          <img src="img/IMG_20250130_135744.jpg" width="500" />
+        <div class="card-servico">
+          <div class="card-imagem">
+            <img src="img/Cisco.jpg" />
+          </div>
+          <p class="card-descricao">
+            Esta é a modelagem de uma infraestrutura de rede corporativa
+            dividida em dois segmentos principais interconectados centralmente
+            por um roteador.
+          </p>
+          <span class="card-local">Feito no cisco Packet Tracer</span>
+          <span class="card-preco">R$ 1.200,00</span>
+        </div>
+
+        <div class="card-servico">
+          <div class="card-imagem">
+            <img src="img/Arduino.png" />
+          </div>
+          <p class="card-descricao">
+            O circuito ilustra a montagem em protoboard de um
+            oscilador/temporizador utilizando o famoso circuito integrado CI
+            555, configurado para gerar pulsos elétricos contínuos ou
+            temporizados.
+          </p>
+          <span class="card-local">Feito no Tinkercad</span>
+          <span class="card-preco">R$ 500,00</span>
+        </div>
+
+        <div class="card-servico">
+          <div class="card-imagem">
+            <img src="img/HTMLCSS.png" />
+          </div>
+          <p class="card-descricao">
+            Este projeto consiste no desenvolvimento do design visual de uma
+            tela de autenticação corporativa ("Client Login"). Focado puramente
+            na camada de front-end, o layout foi construído utilizando HTML
+            estrutural e estilizado de forma estática com CSS.
+          </p>
+          <span class="card-local">Feito na IDE VS Code</span>
+          <span class="card-preco">R$ 350,00</span>
         </div>
       </div>
     </main>
 
-    <!--Rodape do site-->
     <footer>
       <div class="conteudo-rodape">
         <div class="logotipo">Port<span>fólio</span></div>
-        <!--Repeticao da logo no rodape-->
         <div class="navegação-rodape">
-          <a href="#">LinkedIn</a>
-          <a href="#">GitHub</a>
-          <a href="#">Instagram</a>
-          <a href="#">E-mail</a>
+          <a
+            href="https://www.linkedin.com/in/kaua-miguel-neuenfeld-5646b4405/"
+            target="_blank"
+            >LinkedIn</a
+          >
+          <a href="https://github.com/kauaneuenfeld" target="_blank">GitHub</a>
+          <a href="https://www.instagram.com/kauaneuenfeld/" target="_blank"
+            >Instagram</a
+          >
+          <a href="mailto:kauaneuenfeld@gmail.com">E-mail</a>
         </div>
         <p class="direitos-autorais">
           &copy; 2026 - Todos os direitos reservados

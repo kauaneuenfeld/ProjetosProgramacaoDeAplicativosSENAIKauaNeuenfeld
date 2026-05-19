@@ -1,65 +1,169 @@
-@media (max-width: 768px) {
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1 {
+  font-size: clamp(30px, 3.5vw + 1rem, 60px);
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: clamp(22px, 2.5vw + 0.8rem, 38px);
+}
+
+p {
+  font-size: clamp(15px, 0.8vw + 0.7rem, 20px);
+  line-height: 1.6;
+}
+
+/* Logotipo fluido */
+.logotipo {
+  font-size: clamp(26px, 3vw, 45px);
+}
+
+.secao-principal {
+  gap: clamp(40px, 6vw, 100px);
+  padding: clamp(50px, 8vh, 100px) 8%;
+  min-height: 80vh;
+}
+
+.area-imagem {
+  width: clamp(280px, 28vw, 380px);
+  height: clamp(280px, 28vw, 380px);
+  flex-grow: 0;
+}
+
+.moldura-circular {
+  width: 100%;
+  height: 100%;
+}
+
+.moldura-circular img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.texto-apresentação {
+  flex: 1;
+  min-width: 0;
+}
+
+@media (max-width: 992px) {
   header {
     flex-direction: column;
-    gap: 15px;
-    padding: 20px 5%;
-  }
-
-  .logotipo {
-    font-size: 35px;
+    gap: 14px;
+    padding: 18px 5%;
+    text-align: center;
   }
 
   nav ul {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
+    gap: 10px 18px;
   }
 
   nav ul li {
-    margin-left: 0; /* Remove a folga da esquerda para não entortar no celular */
+    margin-left: 0;
   }
 
-  .secao-principal,
-  .secao-sobre,
-  .secao-servicos {
-    flex-direction: column-reverse; /* Ou 'column', dependendo de como quer a ordem */
-    justify-content: center;
+  .secao-principal {
+    flex-direction: column-reverse;
     text-align: center;
-    gap: 40px;
-    padding: 50px 5%;
+    padding: 50px 6%;
+    gap: 30px;
   }
 
-  h1 {
-    font-size: 36px !important;
+  .texto-apresentação {
+    max-width: 100%;
   }
 
-  h2 {
-    font-size: 28px;
-  }
-
-  p {
-    font-size: 18px;
+  .area-imagem {
+    width: clamp(220px, 42vw, 300px);
+    height: clamp(220px, 42vw, 300px);
+    margin: 0 auto;
   }
 
   .grupo-botoes {
     justify-content: center;
     flex-wrap: wrap;
-  }
-  .area-imagem,
-  .foto-sobre {
-    width: 260px;
-    height: 260px;
-    margin: 0 auto; /* Centraliza a foto no celular */
+    padding: 0;
+    gap: 15px;
   }
 
   .navegação-rodape {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
+    gap: 10px;
   }
 
   .navegação-rodape a {
     margin: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 15px 5%;
+    gap: 12px;
+  }
+
+  nav ul {
+    gap: 8px 14px;
+  }
+
+  nav ul li a {
+    font-size: 13px;
+    letter-spacing: 0.5px;
+  }
+
+  .secao-principal {
+    padding: 35px 5%;
+    gap: 25px;
+  }
+
+  .area-imagem {
+    width: clamp(170px, 58vw, 240px);
+    height: clamp(170px, 58vw, 240px);
+  }
+
+  .grupo-botoes {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .botao {
+    width: 100%;
+    max-width: 260px;
+    text-align: center;
+  }
+
+  footer {
+    padding: 30px 5%;
+    margin-top: 30px;
+  }
+
+  .navegação-rodape a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 380px) {
+  nav ul li a {
+    font-size: 12px;
+  }
+
+  .area-imagem {
+    width: 155px;
+    height: 155px;
+  }
+
+  h1 {
+    font-size: 28px;
   }
 }

@@ -56,95 +56,85 @@ nav ul li a:hover {
   color: #1b98e0;
 }
 
-.secao-principal {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 80px 8%;
+.secao-servicos {
+  padding: 70px 8%;
   min-height: 80vh;
-}
-
-.texto-apresentação {
-  max-width: 950px;
-}
-
-.texto-apresentação .saudacao {
-  color: #1b98e0;
-  font-size: 30px;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.texto-apresentação h1 {
-  font-size: 60px;
-  margin-bottom: 15px;
-}
-
-.texto-apresentação h1 span {
-  color: #1b98e0;
-}
-
-.texto-apresentação p {
-  color: #e8f1f2;
-  font-size: 20px;
-  margin-bottom: 30px;
-}
-
-.grupo-botoes {
-  padding: 12px 30px;
   display: flex;
-  gap: 25px;
+  flex-direction: column;
+  align-items: center;
 }
 
-.botao {
-  padding: 12px 30px;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.5s;
-  display: inline-block;
-}
-
-.botao-contratar {
-  background-color: #1b98e0;
-  color: #13293d;
-}
-
-.botao-contratar:hover {
-  background-color: #e8f1f2;
-}
-
-.botao-trabalho {
-  border: 2px solid #006494;
-  color: #e8f1f2;
-}
-
-.botao-trabalho:hover {
-  background-color: #1b98e0;
-}
-
-.area-imagem {
-  position: relative;
-  width: 400px;
-  height: 400px;
-}
-
-.moldura-circular {
+.titulo-servicos {
+  font-size: 52px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 10px;
   width: 100%;
-  height: 100%;
-  background-color: #1b98e0;
+}
+
+.titulo-servicos span {
+  color: #1b98e0;
+}
+
+.subtitulo-servicos {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.grade-servicos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  gap: 20px;
+}
+
+.card-servico {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  gap: 14px;
+}
+
+.card-imagem {
+  width: 240px;
+  height: 240px;
   border-radius: 50%;
   overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  border: 8px solid #006494;
+  border: 6px solid #1b98e0;
+  background-color: #006494;
+  flex-shrink: 0;
 }
 
-.moldura-circular img {
+.card-imagem img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center top;
+}
+
+.card-descricao {
+  color: #e8f1f2;
+  font-size: 15px;
+  line-height: 1.5;
+  max-width: 240px;
+}
+
+.card-local {
+  color: #f0c040;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.card-preco {
+  color: #1b98e0;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 footer {
