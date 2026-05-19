@@ -1,0 +1,65 @@
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 5%;
+  }
+
+  .logotipo {
+    font-size: 35px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  nav ul li {
+    margin-left: 0; /* Remove a folga da esquerda para não entortar no celular */
+  }
+
+  .secao-principal,
+  .secao-sobre,
+  .secao-servicos {
+    flex-direction: column-reverse; /* Ou 'column', dependendo de como quer a ordem */
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+    padding: 50px 5%;
+  }
+
+  h1 {
+    font-size: 36px !important;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .grupo-botoes {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .area-imagem,
+  .foto-sobre {
+    width: 260px;
+    height: 260px;
+    margin: 0 auto; /* Centraliza a foto no celular */
+  }
+
+  .navegação-rodape {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .navegação-rodape a {
+    margin: 0;
+  }
+}
