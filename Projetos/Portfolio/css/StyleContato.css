@@ -164,7 +164,6 @@ a.info-valor:hover {
   color: #1b98e0;
 }
 
-/* Redes sociais */
 .redes-titulo {
   font-size: 11px;
   text-transform: uppercase;
@@ -206,7 +205,6 @@ a.info-valor:hover {
   background-color: #1b98e0;
   border-color: #1b98e0;
   color: #13293d;
-  transform: translateY(-2px);
 }
 
 .rede-card:hover svg {
@@ -300,8 +298,6 @@ a.info-valor:hover {
 
 .botao-enviar:hover {
   background-color: #e8f1f2;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(27, 152, 224, 0.3);
 }
 
 .botao-enviar:disabled {
@@ -313,10 +309,6 @@ a.info-valor:hover {
 .btn-icone {
   font-size: 18px;
   transition: transform 0.3s;
-}
-
-.botao-enviar:hover .btn-icone {
-  transform: translateX(4px);
 }
 
 .form-feedback {
