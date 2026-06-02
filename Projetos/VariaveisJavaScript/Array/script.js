@@ -19,3 +19,13 @@ console.log(usuarios);
 //shift
 usuarios.shift;
 console.log(usuarios);
+
+//mostra a quantidade de itens
+//lenght
+console.log(usuarios.length);
+
+//verifica se existe um item
+//includes()
+console.log(usuarios.includes("Maria"));
+
+
