@@ -1,57 +1,64 @@
-let usuarios = [20, "Carlos", "Maria"];
-
+//Criando arrays
+let usuarios = [10, "Carlos", "Maria"];
 console.log(usuarios);
 
-//acesando itens
+//Acessando Itens
 console.log(usuarios[1]);
 
-//adicionando item no final da array
+//Adicionando item no final da arrays
 //push()
 usuarios.push("Pedro");
 console.log(usuarios);
 
-//remove o ultimo item
+//Remove o último item
 //pop()
 usuarios.pop();
 console.log(usuarios);
 
-//remove o primeiro item
-//shift
-usuarios.shift;
+//Remove o primeiro item
+//shift()
+usuarios.shift();
 console.log(usuarios);
 
 //mostra a quantidade de itens
-//lenght
+//length()
+
 console.log(usuarios.length);
 
-//verifica se existe um item
+//Verifica se um item existe
 //includes()
+
 console.log(usuarios.includes("Maria"));
 
-// mostra a posição do item
+//Mostra a posição do item
 //indexOf()
 console.log(usuarios.indexOf("Maria"));
 
-//remove ou adiciona itens em qualquer posição
+//Remove ou adciona itens
 //splice()
+
 usuarios.splice(0, 1);
 console.log(usuarios);
 
-//copia parte do array
-//slice()
+//Copia parte do array
+//slice
+
+//sintaxe:
 //array.slice(inicio, fim)
-usuarios2 = [20, "Carlos", "Maria", "Pedro", "Joao"]
 
-let novoArray = usuarios2.slice(0, 2);
-console.log(novoArray);
+usuarios2 = [10, "Carlos", "Maria", "Pedro", "Joao"];
 
-//inverter a ordem
+let novoArrays = usuarios2.slice(0, 2);
+console.log(novoArrays);
+
+//Inverter Ordem
 //reverse()
+
 usuarios2.reverse();
 console.log(usuarios2);
 
-//ordem alfabetica
+//Ordena em ordem alfabética
 //sort()
+
 usuarios2.sort();
 console.log(usuarios2);
-
