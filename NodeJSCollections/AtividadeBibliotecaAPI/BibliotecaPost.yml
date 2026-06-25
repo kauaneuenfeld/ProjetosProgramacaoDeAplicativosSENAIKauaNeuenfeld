@@ -1,0 +1,21 @@
+info:
+  name: BibliotecaPost
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:3001/livros
+  body:
+    type: json
+    data: |-
+      {
+        "titulo": "cafe com deus"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

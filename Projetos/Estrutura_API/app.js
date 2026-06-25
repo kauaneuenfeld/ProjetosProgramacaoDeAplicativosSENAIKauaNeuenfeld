@@ -68,6 +68,16 @@ server.put('/curso/:id', (req, res) => {
     cursos[id] = nome
     return res.json(cursos)
 })
+
+// metodo http delete
+// Deletar um curso
+//localhost:3000/curso/2
+server.delete('/curso/:id', (req, res) => {
+    const id = req.params.id
+    cursos.splice(id, 1)
+    return res.json(cursos)
+})
+
 server.listen(3055, () => {
   console.log("Servidor rodando na porta 3055");
 });

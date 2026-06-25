@@ -1,0 +1,21 @@
+info:
+  name: BibliotecaPut
+  type: http
+  seq: 1
+
+http:
+  method: PUT
+  url: http://localhost:3001/livros/4
+  body:
+    type: json
+    data: |-
+      {
+        "titulo": "ele é ele"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

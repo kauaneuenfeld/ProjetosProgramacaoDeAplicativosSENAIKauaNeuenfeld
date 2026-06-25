@@ -1,0 +1,15 @@
+info:
+  name: BibliotecaDelete
+  type: http
+  seq: 1
+
+http:
+  method: DELETE
+  url: http://localhost:3001/livros/4
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
