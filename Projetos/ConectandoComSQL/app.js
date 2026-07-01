@@ -1,19 +1,27 @@
 //Importa o framework express
 const express = require('express');
+const connection = require('./db');
 const server = express();
 
 //Middleware que permite o servidor entender requisições com JSON no corpo (req.body)
 server.use(express.json());
-
-const cursos = ['Node JS', 'JavaScript', 'React Native'];
 
 //===================================
 //Método HTTP: GET
 //LISTAR TODOS OS CURSOS
 //localhost:3000/cursos
 server.get('/cursos', (req, res) => {
-    // Retorna a lista completa de cursos em formato JSON
-    return res.json(cursos);
+
+    const sql = 'SELECT * FROM cursos';
+
+    connection.query(sql, (erro, resultado) => {
+        if (erro) {
+            console.log(erro);
+            return res.status(500).json({ erro: erro.message });
+        }
+
+        return res.json(resultado);
+    });
 });
 
 //Método HTTP: GET
@@ -21,18 +29,25 @@ server.get('/cursos', (req, res) => {
 //localhost:3000/curso/2
 server.get('/cursos/:id', (req, res) => {
 
-    // Desestrutura o parâmetro "index" vindo da URL
-    const id = req.params.id;        
+    const id = req.params.id;
 
-    // Retorna o curso correspondente ao índice informado
-    return res.json(cursos[id]);
+    const sql = 'SELECT * FROM cursos WHERE id = ?';
+
+    connection.query(sql, [id], (erro, resultado) => {
+        if (erro) {
+            console.log(erro);
+            return res.status(500).json({ erro: erro.message });
+        }
+
+        return res.json(resultado[0]);
+    });
 });
 
 //Método HTTP: POST
 //CRIAR UM NOVO CURSO
 //localhost:3000/cursos
 //{ "name": "Curso de Python" }
-server.post('/cursos', (req, res)=> {
+server.post('/cursos', (req, res) => {
 
     // Desestrutura a propriedade "name" enviada no corpo da requisição
     const nome = req.body.nome;
@@ -41,7 +56,7 @@ server.post('/cursos', (req, res)=> {
     cursos.push(nome);
 
     // Retorna a lista atualizada de cursos
-    return res.json(cursos);    
+    return res.json(cursos);
 });
 
 //Método HTTP: PUT
@@ -82,6 +97,6 @@ server.delete('/cursos/:id', (req, res) => {
 
 //O metodo listen() faz o servidor começar a escutar
 // requisiçoes em uma determinada porta.
-server.listen(3023 , () => {
+server.listen(3023, () => {
     console.log("Servidor rodando na porta 3002");
 });
