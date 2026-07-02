@@ -49,14 +49,19 @@ server.get('/cursos/:id', (req, res) => {
 //{ "name": "Curso de Python" }
 server.post('/cursos', (req, res) => {
 
-    // Desestrutura a propriedade "name" enviada no corpo da requisição
     const nome = req.body.nome;
 
-    // Adiciona o novo curso ao array de cursos
-    cursos.push(nome);
+    const sql = `INSERT INTO cursos (nome) VALUES (?)`;
 
-    // Retorna a lista atualizada de cursos
-    return res.json(cursos);
+    connection.query(sql, [nome], (erro, resultado) => {
+        if (erro) {
+            console.log(erro);
+            return res.status(500).json({ erro: erro.message });
+        }
+
+        return res.json({ message: 'Curso cadastrado com sucesso', id: resultado.insertId, nome: nome });
+    });
+
 });
 
 //Método HTTP: PUT
@@ -66,15 +71,18 @@ server.put('/cursos/:id', (req, res) => {
 
     // Obtém o índice do curso a ser atualizado pela URL
     const id = req.params.id;
-
-    // Obtém o novo nome do curso enviado no corpo da requisição
     const nome = req.body.nome;
 
-    // Atualiza o curso no índice informado
-    cursos[id] = nome;
+    const sql = `UPDATE cursos SET nome = ? WHERE id = ?`;
 
-    // Retorna a lista de cursos atualizada
-    return res.json(cursos);
+    connection.query(sql, [nome, id], (erro, resultado) => {
+        if (erro) {
+            console.log(erro);
+            return res.status(500).json({ erro: erro.message });
+        }
+
+        return res.json({ message: 'Curso atualizado com sucesso', nome: nome, id: id });
+    });
 
 });
 
@@ -86,11 +94,17 @@ server.delete('/cursos/:id', (req, res) => {
     // Obtém o índice do curso a ser removido
     const id = req.params.id;
 
-    // Remove 1 elemento do array a partir do índice informado
-    cursos.splice(id, 1);
+    const sql = `DELETE FROM cursos WHERE id = ?`;
 
-    // Retorna a lista de cursos após a exclusão
-    return res.json(cursos);
+    connection.query(sql, [id], (erro, resultado) => {
+        if (erro) {
+            console.log(erro);
+            return res.status(500).json({ erro: erro.message });
+        }
+
+        return res.json({ message: 'Curso deletado com sucesso', id: id });
+    });
+
 });
 
 

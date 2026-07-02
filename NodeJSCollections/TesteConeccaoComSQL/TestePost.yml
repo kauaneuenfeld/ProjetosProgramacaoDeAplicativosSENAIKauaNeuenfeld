@@ -1,11 +1,17 @@
 info:
-  name: TesteConecao
+  name: TestePost
   type: http
   seq: 1
 
 http:
-  method: GET
+  method: POST
   url: http://localhost:3023/cursos
+  body:
+    type: json
+    data: |-
+      {
+        "nome": "C"
+      }
   auth: inherit
 
 settings:
@@ -13,4 +19,3 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
-​
