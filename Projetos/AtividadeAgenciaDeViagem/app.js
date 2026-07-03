@@ -65,6 +65,21 @@ server.put('/destinos/:id', (req, res) => {
     });
 });
 
+server.get('/destinos/pais/:pais', (req, res) => {
+    const pais = req.params.pais;
+
+    const sql = `SELECT * FROM destinos WHERE pais_destino = ?`;
+
+    connection.query(sql, [pais], (erro, resultado) => {
+        if (erro) {
+            console.log(erro);
+            return res.status(500).json({ erro: erro.message });
+        }
+
+        return res.json(resultado[0]);
+    });
+});
+
 server.delete('/destinos/:id', (req, res) => {
     const id = req.params.id;
 
