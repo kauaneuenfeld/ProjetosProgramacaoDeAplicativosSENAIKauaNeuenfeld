@@ -1,0 +1,23 @@
+info:
+  name: CleinteTestePost
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:3009/clientes
+  body:
+    type: json
+    data: |-
+      {
+        "nome":"Gedian",
+        "email": "gedian@gmail.com",
+        "telefone": "(47) 11111111-111111"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
