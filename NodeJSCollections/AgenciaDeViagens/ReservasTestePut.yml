@@ -1,0 +1,23 @@
+info:
+  name: ReservasTestePut
+  type: http
+  seq: 1
+
+http:
+  method: PUT
+  url: http://localhost:3009/reservas/1
+  body:
+    type: json
+    data: |-
+      {
+        "id_cliente": 3,
+        "id_destino": 2,
+        "data_viagem": "2027-01-15"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

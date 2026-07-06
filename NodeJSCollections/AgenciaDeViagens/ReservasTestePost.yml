@@ -1,0 +1,23 @@
+info:
+  name: ReservasTestePost
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:3009/reservas
+  body:
+    type: json
+    data: |-
+      {
+        "id_cliente": 1,
+        "id_destino": 1,
+        "data_viagem": "2020-12-05"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
