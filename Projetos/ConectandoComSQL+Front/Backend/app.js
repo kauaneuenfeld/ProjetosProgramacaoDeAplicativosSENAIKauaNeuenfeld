@@ -1,10 +1,13 @@
 //Importa o framework express
 const express = require('express');
 const connection = require('./db');
+const cors = require('cors');
+
 const server = express();
 
 //Middleware que permite o servidor entender requisições com JSON no corpo (req.body)
 server.use(express.json());
+server.use(cors());
 
 //===================================
 //Método HTTP: GET
