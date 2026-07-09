@@ -7,7 +7,7 @@ async function listarCursos() {
     lista.innerHTML = '';
 
     cursos.forEach(curso => {
-        lista.innerHTML = `
+        lista.innerHTML += `
             <li>
                 ${curso.id} - ${curso.nome}
             </li>
